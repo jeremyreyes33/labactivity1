@@ -1,0 +1,11 @@
+div .transform_me {
+    width: 1px;
+    height: 120px;
+    background: rgb(33, 37, 41);
+    border-radius: 12px;
+    border-right: 3px solid darkred;
+    /*-webkit-transition: width 2s; Safari */
+    /*-webkit-transition-delay: .7s;  Safari */
+    transition: width .9s;
+    transition-delay: .7s;
+}

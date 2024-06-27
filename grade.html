@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/my_style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row mt-2"> 
+			<div class="col-md-12">
+				<ul class="nav justify-content-end nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" href="Arithmetic.html">Arithmetic Operation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Grade Computation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="about.html">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container">
+		<div class="row bg-primary text-light mt-3 p-4" style="text-align: center;border-radius: 12px;">
+			<h1 onclick="pag_click()" onmouseleave="pag_umalis()">Grade Computation Sample</h1>
+			<p style="font-style:italic;">"Sample - Laboratory Activity"</p>
+			
+		</div>
+
+		<div class="row mt-3">
+			<div class="col-md-8">
+				<h4 class="text-secondary"> Base 50 please input between 50 to 100 only </h4>
+				<table class="table table-bordered">
+					<tr>
+						<th colspan="2"> Grade Computation</th>
+
+					</tr>
+					
+					<tr>
+						<td> Attendance : </td>
+						<td><input type="number" id="att" placeholder="Attendance 10%" /></td>
+					</tr>
+										<tr>
+						<td> Seatwork 20%: </td>
+						<td><input type="number" id="sw" placeholder="Seatwork 20%"></td>
+					</tr>
+										<tr>
+						<td> Quizzes 30% : </td>
+						<td><input type="number" id="que" placeholder="Quizzes 30%"></td>
+					</tr>
+										<tr>
+						<td> Exam 40% : </td>
+						<td><input type="number" id="ex" placeholder="Examination 40%"></td>
+					</tr>
+				</table>  
+			</div>
+			<div class="col-md-4">
+				<h5 id="highlight" class="alert alert-info" role="alert"
+				style="cursor: pointer; transition: .4s;" >Click here to show the answer!</h5>
+				<hr class="bg-secondary">
+				<div class="transform_me text-light">
+					<marquee><h5 id="show_ans" style="color:greenyellow;font-family: Yu Gothic UI Light;"  class="p-5"> </h5> </marquee>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="bg-secondary text-light p-3" style="border:1px solid black">
+				<h3 id="res1">... </h3>
+				<hr>
+				<caption>Attendance</caption>
+				</div>
+				
+			</div>
+			<div class="col">
+								<div class="bg-secondary text-light p-3" style="border:1px solid black">
+				<h3 id="res2">... </h3>
+				<hr>
+				<caption>Seatwork</caption>
+				</div>
+			</div>
+			<div class="col">
+								<div class="bg-secondary text-light p-3" style="border:1px solid black">
+				<h3 id="res3">... </h3>
+				<hr>
+				<caption>Quizzes</caption>
+				</div>
+			</div>
+			<div class="col">
+								<div class="bg-secondary text-light p-3" style="border:1px solid black">
+				<h3 id="res4">... </h3>
+				<hr>
+				<caption>Exam</caption>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="js/my_grade.js">
+	</script>
+</html>
